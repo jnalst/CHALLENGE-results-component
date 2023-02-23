@@ -163,7 +163,7 @@ body {
   background-color: #ffb01f23;
 }
 
-.boxinfo2 .memory h3{
+.boxinfo2 .memory h3 {
   color: var(--orangeyYellow);
 }
 
@@ -177,7 +177,7 @@ body {
   background-color: #00bd9123;
 }
 
-.boxinfo2 .verbal h3{
+.boxinfo2 .verbal h3 {
   color: var(--greenTeal);
 }
 
@@ -191,7 +191,7 @@ body {
   background-color: #1125d423;
 }
 
-.boxinfo2 .visual h3{
+.boxinfo2 .visual h3 {
   color: var(--cobaltBlue);
 }
 
@@ -221,23 +221,21 @@ body {
 
 .boxinfo2 .botao:hover {
   cursor: pointer;
-  background: #303b5a;
-  transition: 0.32s;
+  background: linear-gradient(180deg, #6b47f8, #221fdf);
+  transition: all 0.5s;
 }
 
-
-.attribution{
+.attribution {
   font-family: "Hanken Grotesk";
   font-size: 1.6rem;
 }
 
-.attribution a{
+.attribution a {
   text-decoration: none;
   color: var(--violetBlue);
 }
 
 @media screen and (max-width: 600px) {
-  
   .boxInfo {
     margin-top: -3.5rem;
     display: grid;
@@ -250,19 +248,25 @@ body {
   .boxinfo1 .score {
     display: flex;
     flex-direction: column;
-    place-items: center;
+    align-items: center;
+    justify-items: center;
     text-align: center;
     background: linear-gradient(0deg, #2421ca00, #4e21ca);
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
     gap: 2rem;
-    margin-left: 12rem;
     margin-top: 3rem;
+    margin-inline: auto;
   }
 
-  .boxinfo1 .text  {
-  margin-left: 10rem;
+  .boxinfo1 .text {
+    margin-inline: auto;
+  }
+
+  .boxinfo2 {
+    align-items: center;
+    justify-content: center;
   }
 
   .boxinfo2 .botao {
